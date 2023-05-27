@@ -20,7 +20,7 @@ struct AsyncImageView: View {
     let height: CGFloat = 50
 
     var body: some View {
-        AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500/\(posterPath)")) { image in
+        AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/original/\(posterPath)")) { image in
             NavigationLink {
                 DetailView(movie: movie)
             } label: {
